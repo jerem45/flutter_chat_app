@@ -1,28 +1,71 @@
-# Firebase build and deployment files
-/firebase-debug.log
-/firebase-debug.*.log
+# Flutter
+**/build/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.melody_tool/
+.generated/
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+.history/
+
+# Android
+android/.gradle/
+android/captures/
+android/gradle/
+android/app/*.keystore
+android/app/*.jks
+*.jks
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Web
+web/.dart_tool/
+
+# Dart
+pubspec.lock
+.dart_tool/
+
+# Node (si utilisé)
+node_modules/
+
+# Firebase CLI (si utilisé)
+.firebase/
 .firebaserc
+firebase-debug.log
 
-# Firebase Hosting
-/firebase.json
-*.cache
-hosting/.cache
-
-# Firebase Functions
-/functions/node_modules/
-/functions/.env
-/functions/package-lock.json
-
-# Firebase Emulators
-/firebase-*.zip
-/.firebase/
-/emulator-ui/
-
-# Logs
+# Generated files
+coverage/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Environment files (local configs)
-/.env.*
+# Env files
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+.cache/
+
+# Windows
+Thumbs.db
+desktop.ini
+# Firebase config
+lib/firebase_options.dart
